@@ -34,9 +34,23 @@
 
 .section-1 {
     grid-area: section1;
+    margin: 10px 10px 0px 10px;
+    overflow: visible;
+}
+
+.section-1 img {
+
+    position: absolute;
+    bottom:30px;
 }
 .section-2 {
     grid-area: section2;
+    margin: 0px 10px 10px 10px;
+}
+
+.section-2 h1 {
+    text-align: center;
+    font-weight: 700;
 }
 
 
@@ -44,15 +58,24 @@
     background-color: white;
     color: #444;
     cursor: pointer;
-    padding: 18px;
+    padding: 16px;
     width: 100%;
     border: none;
     border-top: 0.1px solid #444;
     text-align: left;
     outline: none;
-    font-size: 12px;
-    transition: 0.8s;
+    font-size: 13px;
   }
+
+.accordion i {
+
+  font-size: 18px;
+  color: #595959;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+
+}
 
 .accordion i.fa-chevron-down {
     float: right;
@@ -70,6 +93,7 @@
     display: none;
     background-color: white;
     overflow: hidden;
+    bottom: 5px;
   }
 
 * {
@@ -93,6 +117,7 @@ html body {
     height: 100%;
     display: grid;
     place-items: center;
+    overflow: visible;
 }
 .container {
     display: grid;
@@ -102,6 +127,7 @@ html body {
     grid-template-columns: 1fr;
     grid-template-rows: 200px 1fr;
     grid-template-areas: "section1" "section2";
+    overflow: visible;
 }
 
 
