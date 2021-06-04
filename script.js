@@ -17,18 +17,3 @@ for (i = 0; i < acc.length; i++) {
 }
 
 
-
-$(document).ready(function(){
-    $('.accordion').click(function() {
-        $(this).toggleClass('open');
-
-        $accordion_content = $(this).next('.panel');
-
-        $('.panel').not($accordion_content).slideUp();
-        $('.panel').not($accordion_content).prev('.accordion').removeClass('open');
-        $accordion_content.stop(true, true).slideToggle(400)
-
-        // Remove this handle
-        //$('.accordion-title i').toggleClass('rotate');
-    });
-});
