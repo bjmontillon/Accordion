@@ -44,8 +44,8 @@
   background-repeat: no-repeat;
   background-size: 210px;
   background-position: center;
-  height: 100%;
-  top: -100px;
+  height: 200px;
+  top: -120px;
   right: 15px;
   overflow: visible;
 }
@@ -55,8 +55,8 @@
   background-repeat: no-repeat;
   background-size: 200px;
   background-position: center;
-  height: 100%;
-  top: -210px;
+  height: 200px;
+  top: -280px;
   left: -5px;
   overflow: visible;
 }
@@ -158,7 +158,7 @@ html body {
     height: 100%;
     border-radius: 15px;
     grid-template-columns: 1fr;
-    grid-template-rows: 150px 1fr;
+    grid-template-rows: 70px 1fr;
     grid-template-areas: "section1" "section2";
     overflow: visible;
     
