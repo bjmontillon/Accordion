@@ -33,10 +33,11 @@
 }
 
 .section-1 {
-    grid-area: section1;
-    margin: 10px 10px 0px 10px; 
-    height: 100%;
-    overflow:visible;
+  display: grid;
+  grid-area: section1;
+  margin: 10px 10px 0px 10px; 
+  height: 100%;
+  overflow: visible;
 }
 
 .section-1 .img1 {
@@ -47,7 +48,7 @@
   height: 200px;
   top: -120px;
   right: 15px;
-  overflow: visible;
+  position: relative;
 }
 
 .section-1 .img2 {
@@ -58,7 +59,7 @@
   height: 200px;
   top: -280px;
   left: -5px;
-  overflow: visible;
+  
 }
 
 .section-2 {
@@ -112,13 +113,13 @@
     background-color: #ccc; 
   }*/
   
-  .panel {
+.panel {
     padding: 0 18px;
     display: none;
     background-color: white;
     overflow: hidden;
     bottom: 5px;
-  }
+}
 
 * {
     padding: 0%;
@@ -186,7 +187,7 @@ p {
     display: grid;
     background-color: white;
     width: 800px;
-    height: 500px;
+    height: 450px;
     border-radius: 25px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -196,35 +197,37 @@ p {
 }
 
 .section-1 {
-  position: relative;
 }
 
 .section-1 .img1 {
   background-image: url(./images/illustration-woman-online-desktop.svg);
   background-repeat: no-repeat;
-  background-size: 250px;
-  position: absolute;
-  height: 300px;
-  
-  
-  right: 15px;
-  overflow: visible;
+  background-size: 200px;
+  height: 200px;
+  top: 50px;
+  position: relative;
+  z-index: 3;
+  border: 1px solid red;
 }
 
 .section-1 .img2 {
   background-image: url(./images/bg-pattern-desktop.svg);
   background-repeat: no-repeat;
-  background-size: 300px;
-  height: 300px;
-  top: -200px;
+  background-size: 200px;
+  height: 200px;
+  width: 200px;
+  top: -150px;
   left: -100px;
-  overflow: visible;
+  position:relative;
+  z-index: 2;
+  border: 1px solid blue;
 }
 
 .section-2 {
   margin: 40px 20px 40px 0px;
-  position: relative;
+  z-index: 1;
 }
+
 
 
 /* end............................. */
