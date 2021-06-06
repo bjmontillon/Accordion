@@ -216,7 +216,6 @@ p {
   background-image: url(./images/illustration-box-desktop.svg);
   height: 20%;
   background-repeat: no-repeat;
-  border: 1px solid green;
   background-size: 100px;
   top: 205px;
   left: 30px;
@@ -230,9 +229,6 @@ p {
   height: 100%;
   left: -60px;
   top: -10px;
-  
-  
-  border: 1px solid red;
 }
 
 .section-1 .img2 {
@@ -240,17 +236,12 @@ p {
   background-repeat: no-repeat;
   background-size: 400px;
   height: 100%;
- 
   top: -400px;
   left: -55px;
-  
-  
-  border: 1px solid blue;
 }
 
 .section-2 {
   margin: 40px 20px 40px 0px;
-  
 }
 
 
